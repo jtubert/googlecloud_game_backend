@@ -37,7 +37,7 @@ app.get('/_ah/stop', function(req, res) {
 
 app.get('/hello', function(req, res) {
   var env = req.appengine.devappserver ? 'the dev appserver' : 'production';
-  res.send('Hello, John from ' + env + '!');
+  res.send('Hello, world from ' + env + '!');
 });
 
 app.listen(8080, '0.0.0.0');
